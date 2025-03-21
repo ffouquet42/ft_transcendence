@@ -38,13 +38,22 @@ Include in HTML
 
 ## Tailwind
 
-tailwind.css
+Install Tailwind
+```javascript
+npm install tailwindcss @tailwindcss/cli
+```
 
-1. Terminal => npm install tailwindcss @tailwindcss/cli
-2. input.css => @import "tailwindcss";
-3. Terminal => npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
-4. index.html => <link href="./output.css" rel="stylesheet">
+Import Tailwind in `input.css`
+```javascript
+@import "tailwindcss";
+```
 
----
+Create `output.css`
+```javascript
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+```
 
-- Single page application ?
+Include in HTML
+```javascript
+<link href="./output.css" rel="stylesheet">
+```
