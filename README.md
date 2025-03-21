@@ -1,9 +1,12 @@
-Étape 1 : Installer TypeScript
+## TypeScript
 
+Install TypeScript
+```javascript
 npm install -g typescript
+```
 
-Étape 2 : Configurer TypeScript => "tsconfig.json"
-
+Config TypeScript in `tsconfig.json`
+```javascript
 {
   "compilerOptions": {
     "outDir": "./dist",
@@ -11,24 +14,29 @@ npm install -g typescript
     "strict": true
   }
 }
+```
 
-Étape 3 : Écrire ton code TypeScript => "src/main.ts"
-
+Write TypeScript code in `src/main.ts`
+```javascript
 const button = document.querySelector("button") as HTMLButtonElement;
 
 button.addEventListener("click", () => {
     console.log("Bouton cliqué !");
 });
+```
 
-Étape 4 : Compiler en JavaScript
-
+Compil in JavaScript to generate `dist/main.js`
+```javascript
 tsc
+```
 
-Cela génère un fichier dist/main.js que tu peux inclure dans ton HTML :
-
+Include in HTML
+```javascript
 <script src="dist/main.js"></script>
+```
 
----
+
+## Tailwind
 
 tailwind.css
 
