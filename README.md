@@ -15,7 +15,7 @@ Install Tailwind 2/2
 npx tailwindcss init
 ```
 
-Import Tailwind in `input.css`
+Import Tailwind in `./srcs/input.css`
 ```javascript
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,7 @@ Import Tailwind in `input.css`
 Add paths of html files in `tailwind.config.js`
 ```javascript
 module.exports = {
-  content: ["./index.html"],
+  content: ["./src/index.html"],
   theme: {
     extend: {},
   },
@@ -35,7 +35,7 @@ module.exports = {
 
 Create / Update `output.css` (Keep running while working)
 ```javascript
-npx tailwindcss -i ./src/input.css -o ./output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 Include in HTML
