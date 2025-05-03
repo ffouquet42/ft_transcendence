@@ -5,12 +5,12 @@ Init project
 npm init -y
 ```
 
-Install Tailwind 1/2
+Install Tailwind [1/2]
 ```javascript
 npm install -D tailwindcss@3.4.1
 ```
 
-Install Tailwind 2/2
+Install Tailwind [2/2]
 ```javascript
 npx tailwindcss init
 ```
