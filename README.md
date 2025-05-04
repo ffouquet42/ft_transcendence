@@ -87,7 +87,7 @@ Include in HTML before `</body>`
 
 ## 3. Install Local Server
 
-Install TypeScript
+Install serve
 ```javascript
 npm install -g serve
 ```
