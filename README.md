@@ -48,58 +48,66 @@ Include in HTML
 
 Install TypeScript
 ```javascript
-npm install -g typescript
+npm install typescript --save-dev
 ```
 
 Config TypeScript in `tsconfig.json`
 ```javascript
 {
-  "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true
+	"compilerOptions": {
+	  "target": "ES6",
+	  "module": "ES6",
+	  "rootDir": "src",
+	  "outDir": "dist",
+	  "strict": true
+	},
+	"include": ["src/**/*"]
   }
-}
 ```
 
-Write TypeScript code in `src/main.ts`
+Write TypeScript code in `src/main.ts` (example) :
 ```javascript
 const button = document.querySelector("button") as HTMLButtonElement;
 
 button.addEventListener("click", () => {
-    console.log("Bouton cliqué !");
+    console.log("Hello World!");
 });
 ```
 
-Compil in JavaScript to generate `dist/main.js`
+Create / Update `dist/main.js` (Keep running while working)
 ```javascript
-tsc
+npx tsc --watch
 ```
 
-Include in HTML
+Include in HTML before `</body>`
 ```javascript
-<script src="dist/main.js"></script>
+<script type="module" src="../dist/main.js" defer></script>
 ```
 
 
-## (old) Install Tailwind
+## 3. Install Local Server
 
-Install Tailwind
+Install TypeScript
 ```javascript
-npm install tailwindcss @tailwindcss/cli
+npm install -g serve
 ```
 
-Import Tailwind in `input.css`
+
+## 4. Working Flow
+
+Open 3 Terminals :
+
+Terminal #1 :
 ```javascript
-@import "tailwindcss";
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
-Create `output.css`
+Terminal #2 :
 ```javascript
-npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+npx tsc --watch
 ```
 
-Include in HTML
+Terminal #3 :
 ```javascript
-<link href="./output.css" rel="stylesheet">
+serve .
 ```
