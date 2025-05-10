@@ -3,7 +3,7 @@
 	  "target": "ES6",
 	  "module": "ES6",
 	  "rootDir": "src",
-	  "outDir": "dist",
+	  "outDir": "src/dist",
 	  "strict": true
 	},
 	"include": ["src/**/*"]

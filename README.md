@@ -107,7 +107,7 @@ Terminal #2 :
 npx tsc --watch
 ```
 
-Terminal #3 `where index.html is`:
+Terminal #3 `dans src`:
 ```javascript
-serve -s .
+serve .
 ```
