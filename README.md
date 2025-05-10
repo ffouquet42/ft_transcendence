@@ -58,7 +58,7 @@ Config TypeScript in `tsconfig.json`
 	  "target": "ES6",
 	  "module": "ES6",
 	  "rootDir": "src",
-	  "outDir": "dist",
+	  "outDir": "src/dist",
 	  "strict": true
 	},
 	"include": ["src/**/*"]
@@ -74,14 +74,14 @@ button.addEventListener("click", () => {
 });
 ```
 
-Create / Update `dist/main.js` (Keep running while working)
+Create / Update `src/dist/main.js` (Keep running while working)
 ```javascript
 npx tsc --watch
 ```
 
 Include in HTML before `</body>`
 ```javascript
-<script type="module" src="../dist/main.js" defer></script>
+<script type="module" src="/dist/main.js" defer></script>
 ```
 
 
@@ -107,7 +107,7 @@ Terminal #2 :
 npx tsc --watch
 ```
 
-Terminal #3 `dans src`:
+Terminal #3 `in /src`:
 ```javascript
 serve .
 ```
