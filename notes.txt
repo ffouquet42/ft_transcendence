@@ -3,6 +3,7 @@ Refaire les routes pour avoir que index.html et ajouter pages en .ts
 - Add favicon
 - Change fonts
 - Responsive ?
+- Footer ?
 
 Questions :
 - single page application ?
