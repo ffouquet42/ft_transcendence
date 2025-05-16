@@ -1,4 +1,10 @@
-/* === DEV ===*/
+/* === CUSTOM CSS ===*/
+/* === 0. DEV ===*/
+/* === 1. GLOBAL ===*/
+/* === 2. CHAT ===*/
+
+
+/* === 0. DEV ===*/
 
 .border-1 {
 	border: 1px solid blue;
@@ -12,15 +18,23 @@
 	border: 1px solid red;
 }
 
+.border-4 {
+	border: 1px solid black;
+}
 
-/* === CUSTOM CSS ===*/
-/* === 1. GLOBAL ===*/
-/* === 2. CHAT ===*/
+.border-5 {
+	border: 1px solid purple;
+}
 
 
 /* === 1. GLOBAL === */
+
 .margin-top-50 {
 	margin-top: 50px;
+}
+
+.margin-top-100 {
+	margin-top: 100px;
 }
 
 .margin-left-right-100 {
@@ -29,56 +43,4 @@
 }
 
 /* === 2. CHAT === */
-.chat-box {
-	height: 600px;
-	border: 2px solid rgb(69, 54, 199);
-	border-radius: 30px;
-	background-color: aliceblue;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	overflow: hidden;
-}
-
-/* Partie messages */
-.chat-message {
-	flex: 1;
-	overflow-y: auto;
-	padding: 20px;
-}
-
-/* Champ de saisie */
-
-
-.chat-input {
-	padding: 20px;
-	border-top: 1px solid #ccc;
-	background-color: white;
-	display: flex;
-	gap: 10px;
-}
-
-.message-field {
-	flex: 1;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 20px;
-	outline: none;
-	font-size: 16px;
-}
-
-.send-button {
-	padding: 10px 20px;
-	border: none;
-	border-radius: 20px;
-	background-color: #007bff;
-	color: white;
-	font-size: 16px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
-
-.send-button:hover {
-	background-color: #0056b3;
-}
