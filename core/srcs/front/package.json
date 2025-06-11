@@ -1,0 +1,20 @@
+{
+  "name": "pong-game",
+  "version": "1.0.0",
+  "description": "A real-time Pong game with tournaments",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.48",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^6.3.5"
+  }
+}

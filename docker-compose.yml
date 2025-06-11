@@ -1,0 +1,46 @@
+services:
+  back:
+    container_name: back
+    image: back
+    build:
+      context: ./core/srcs/back
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+    env_file: ./.env
+    volumes:
+    - sqlite_data:/data
+    networks:
+      - transcendence
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://localhost:3000/health", "--insecure"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  front:
+    container_name: front
+    image: front
+    build:
+      context: ./core/srcs/front
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      back:
+        condition: service_healthy
+    env_file: ./.env
+    networks:
+      - transcendence
+    restart: unless-stopped
+
+networks:
+  transcendence:
+    driver: bridge
+    name: transcendence
+
+volumes:
+  sqlite_data: {}
