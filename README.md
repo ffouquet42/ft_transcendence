@@ -78,4 +78,4 @@ The application was manually tested to ensure:
 
 ## Credits
 
-Project made by npetipi, mfroissa, mfeldman & [ffouquet42](https://github.com/ffouquet42)
+Project made by npetipi (Security and Protection) & mfroissa (Pong Game Design) & mfeldman (Server Development) & [ffouquet42](https://github.com/ffouquet42) (UI and Visual Design)
